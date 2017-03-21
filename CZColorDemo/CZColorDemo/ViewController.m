@@ -7,11 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "UIColor+CZColor.h"
 
 static NSString *kColorCell = @"ColorCell";
 
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) NSArray<UIColor *> *cellColorList;
 
 @end
 
@@ -29,6 +31,18 @@ static NSString *kColorCell = @"ColorCell";
 	// Dispose of any resources that can be recreated.
 }
 
+- (NSArray<UIColor *> *)cellColorList {
+	if (!_cellColorList) {
+		_cellColorList = @[[UIColor colorWithRed:246.0 / 255 green:80.0 / 255 blue:70.0 / 255 alpha:0.9],
+						   [UIColor colorWithHexString:@"#E5F65046"],
+						   [UIColor colorWithHexString:@"#F65046" alpha:0.9],
+						   [UIColor colorWithR:246.0 g:80.0 b:70.0],
+						   [UIColor colorWithR:246.0 g:80.0 b:70.0 alpha:0.9],
+						   [UIColor randomColor]];
+	}
+	return _cellColorList;
+}
+
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
 	return 3;
@@ -40,7 +54,7 @@ static NSString *kColorCell = @"ColorCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 	UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kColorCell forIndexPath:indexPath];
-	cell.backgroundColor = [UIColor purpleColor];
+	cell.backgroundColor = self.cellColorList[indexPath.section * 2 + indexPath.item];
 	return cell;
 }
 
