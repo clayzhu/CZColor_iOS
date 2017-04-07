@@ -14,3 +14,7 @@ CZColor_iOS 提供了4种对颜色的处理方法：
 * 生成随机色
 * 根据图片获取图片的主色调
 
+## 2. 安装
+
+下载 [CZColor_iOS](https://github.com/clayzhu/CZColor_iOS/archive/master.zip)，将 `/CZColorDemo/CZColor` 文件夹拖入项目中，记得在 `Destination: Copy items if needed` 前面打勾。
+
