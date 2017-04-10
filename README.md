@@ -23,3 +23,7 @@ CZColor_iOS 提供了4种对颜色的处理方法：
 
 `/CZColorDemo/CZColor` 文件夹下的 `UIColor+CZColor.h`、`UIColor+CZColor.m`，是主要实现文件。
 
+使用分类扩展 UIColor 的方法，并使用类方法，调用时就像直接调用系统的方法。
+
+### 3.1 使用十六进制的色值设置颜色
+
