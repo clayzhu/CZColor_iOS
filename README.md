@@ -27,3 +27,24 @@ CZColor_iOS 提供了4种对颜色的处理方法：
 
 ### 3.1 使用十六进制的色值设置颜色
 
+```objc
+/**
+ *  使用十六进制的色值设置颜色
+ *
+ *  @param hexString 十六进制的颜色色值，“#”可写可不写。色值可传的格式有：#RBG, #ARGB, #RRGGBB, #AARRGGBB
+ *
+ *  @return UIColor 颜色
+ */
++ (UIColor *)colorWithHexString:(NSString *)hexString;
+
+/**
+ *  使用十六进制的色值设置颜色，可设置透明度
+ *
+ *  @param hexString 十六进制的颜色色值，“#”可写可不写。色值可传的格式有：#RBG, #RRGGBB
+ *  @param alpha     颜色透明度
+ *
+ *  @return UIColor 颜色
+ */
++ (UIColor *)colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
+```
+
