@@ -13,7 +13,7 @@
 /**
  *  使用十六进制的色值设置颜色
  *
- *  @param hexString 十六进制的颜色色值，“#”可写可不写
+ *  @param hexString 十六进制的颜色色值，“#”可写可不写。色值可传的格式有：#RBG, #ARGB, #RRGGBB, #AARRGGBB
  *
  *  @return UIColor 颜色
  */
@@ -22,7 +22,7 @@
 /**
  *  使用十六进制的色值设置颜色，可设置透明度
  *
- *  @param hexString 十六进制的颜色色值，“#”可写可不写
+ *  @param hexString 十六进制的颜色色值，“#”可写可不写。色值可传的格式有：#RBG, #RRGGBB
  *  @param alpha     颜色透明度
  *
  *  @return UIColor 颜色
