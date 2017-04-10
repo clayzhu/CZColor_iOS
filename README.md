@@ -82,3 +82,10 @@ CZColor_iOS 提供了4种对颜色的处理方法：
 + (UIColor *)randomColor;
 ```
 
+### 3.4 根据图片获取图片的主色调
+
+```objc
+/** 根据图片获取图片的主色调 */
++ (UIColor *)primaryColorWithImage:(UIImage *)image;
+```
+
