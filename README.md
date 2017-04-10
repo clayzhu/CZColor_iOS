@@ -75,3 +75,10 @@ CZColor_iOS 提供了4种对颜色的处理方法：
 + (UIColor *)colorWithR:(CGFloat)r g:(CGFloat)g b:(CGFloat)b alpha:(CGFloat)alpha;
 ```
 
+### 3.3 生成随机色
+
+```objc
+/** 生成一个随机颜色 */
++ (UIColor *)randomColor;
+```
+
