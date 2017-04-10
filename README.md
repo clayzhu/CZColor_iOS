@@ -48,3 +48,30 @@ CZColor_iOS 提供了4种对颜色的处理方法：
 + (UIColor *)colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
 ```
 
+### 3.2 使用取值范围为 0.0~255.0 的色值设置颜色
+
+```objc
+/**
+ *  设置 RGB 颜色，传入的颜色为最大 255.0 的色值，透明度为 1.0
+ *
+ *  @param r Red 色值
+ *  @param g Green 色值
+ *  @param b Blue 色值
+ *
+ *  @return UIColor 颜色
+ */
++ (UIColor *)colorWithR:(CGFloat)r g:(CGFloat)g b:(CGFloat)b;
+
+/**
+ *  设置 RGB 颜色和透明度，传入的颜色为最大 255.0 的色值
+ *
+ *  @param r     Red 色值
+ *  @param g     Green 色值
+ *  @param b     Blue 色值
+ *  @param alpha 透明度
+ *
+ *  @return UIColor 颜色
+ */
++ (UIColor *)colorWithR:(CGFloat)r g:(CGFloat)g b:(CGFloat)b alpha:(CGFloat)alpha;
+```
+
