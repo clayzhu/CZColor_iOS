@@ -32,15 +32,15 @@ static NSString *kColorCell = @"ColorCell";
 }
 
 - (NSArray<UIColor *> *)cellColorList {
-	if (!_cellColorList) {
-		_cellColorList = @[[UIColor colorWithRed:246.0 / 255 green:80.0 / 255 blue:70.0 / 255 alpha:0.9],
-						   [UIColor colorWithHexString:@"#E5F65046"],
-						   [UIColor colorWithHexString:@"#F65046" alpha:0.9],
-						   [UIColor colorWithR:246.0 g:80.0 b:70.0],
-						   [UIColor colorWithR:246.0 g:80.0 b:70.0 alpha:0.9],
-						   [UIColor randomColor]];
-	}
-	return _cellColorList;
+    if (!_cellColorList) {
+        _cellColorList = @[[UIColor colorWithRed:246.0 / 255 green:80.0 / 255 blue:70.0 / 255 alpha:0.9],
+                           [UIColor colorWithHexString:@"#E5F65046"],
+                           [UIColor colorWithHexString:@"#F65046" alpha:0.9],
+                           [UIColor colorWithR:246.0 g:80.0 b:70.0],
+                           [UIColor colorWithR:246.0 g:80.0 b:70.0 alpha:0.9],
+                           [UIColor randomColor]];
+    }
+    return _cellColorList;
 }
 
 #pragma mark - UICollectionViewDataSource
