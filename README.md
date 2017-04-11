@@ -96,3 +96,19 @@ CZColor_iOS 提供了4种对颜色的处理方法：
 
 2. 创建一个数组 `NSArray<UIColor *> *cellColorList`，保存 `UIColor` 元素，颜色显示在 `UICollectionView` 的每一格中。
 
+3. `cellColorList` 颜色数组通过懒加载的形式创建，每一项实现一个创建 `UIColor` 的方法。
+
+```objc
+- (NSArray<UIColor *> *)cellColorList {
+    if (!_cellColorList) {
+        _cellColorList = @[[UIColor colorWithRed:246.0 / 255 green:80.0 / 255 blue:70.0 / 255 alpha:0.9],
+                           [UIColor colorWithHexString:@"#E5F65046"],
+                           [UIColor colorWithHexString:@"#F65046" alpha:0.9],
+                           [UIColor colorWithR:246.0 g:80.0 b:70.0],
+                           [UIColor colorWithR:246.0 g:80.0 b:70.0 alpha:0.9],
+                           [UIColor randomColor]];
+    }
+    return _cellColorList;
+}
+```
+
