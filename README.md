@@ -90,3 +90,9 @@ CZColor_iOS 提供了4种对颜色的处理方法：
 + (UIColor *)primaryColorWithImage:(UIImage *)image;
 ```
 
+## 4. 示例
+
+1. 在 `Main.storyboard` 中添加一个 `UICollectionView`，在 `ViewController` 中实现代理。
+
+2. 创建一个数组 `NSArray<UIColor *> *cellColorList`，保存 `UIColor` 元素，颜色显示在 `UICollectionView` 的每一格中。
+
