@@ -13,7 +13,7 @@
 		1897365B1E7FAD5600B45C15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189736591E7FAD5600B45C15 /* Main.storyboard */; };
 		1897365D1E7FAD5600B45C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1897365C1E7FAD5600B45C15 /* Assets.xcassets */; };
 		189736601E7FAD5600B45C15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1897365E1E7FAD5600B45C15 /* LaunchScreen.storyboard */; };
-		1897366A1E7FAE4E00B45C15 /* UIColor+CZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 189736691E7FAE4E00B45C15 /* UIColor+CZColor.m */; };
+		E611AF3A20A0657C00F234BE /* UIColor+CZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E611AF3920A0657C00F234BE /* UIColor+CZColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		1897365C1E7FAD5600B45C15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1897365F1E7FAD5600B45C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		189736611E7FAD5600B45C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		189736681E7FAE4E00B45C15 /* UIColor+CZColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZColor.h"; sourceTree = "<group>"; };
-		189736691E7FAE4E00B45C15 /* UIColor+CZColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZColor.m"; sourceTree = "<group>"; };
+		E611AF3820A0657C00F234BE /* UIColor+CZColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZColor.h"; sourceTree = "<group>"; };
+		E611AF3920A0657C00F234BE /* UIColor+CZColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				1897364F1E7FAD5500B45C15 /* CZColorDemo */,
-				189736671E7FAE1800B45C15 /* CZColor */,
+				E611AF3720A0657C00F234BE /* CZColor */,
 				1897364E1E7FAD5500B45C15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,13 +83,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		189736671E7FAE1800B45C15 /* CZColor */ = {
+		E611AF3720A0657C00F234BE /* CZColor */ = {
 			isa = PBXGroup;
 			children = (
-				189736681E7FAE4E00B45C15 /* UIColor+CZColor.h */,
-				189736691E7FAE4E00B45C15 /* UIColor+CZColor.m */,
+				E611AF3820A0657C00F234BE /* UIColor+CZColor.h */,
+				E611AF3920A0657C00F234BE /* UIColor+CZColor.m */,
 			);
-			path = CZColor;
+			name = CZColor;
+			path = ../CZColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1897366A1E7FAE4E00B45C15 /* UIColor+CZColor.m in Sources */,
+				E611AF3A20A0657C00F234BE /* UIColor+CZColor.m in Sources */,
 				189736581E7FAD5500B45C15 /* ViewController.m in Sources */,
 				189736551E7FAD5500B45C15 /* AppDelegate.m in Sources */,
 				189736521E7FAD5500B45C15 /* main.m in Sources */,
@@ -325,6 +326,7 @@
 				189736661E7FAD5600B45C15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
